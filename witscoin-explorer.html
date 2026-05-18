@@ -309,7 +309,7 @@
     <div class="card-wrap">
       <div class="tabs">
         <button class="tab active" onclick="switchTab('blocks', this)">Blocks</button>
-        <button class="tab" onclick="switchTab('pending', this)">Pending txns</button>
+        <button class="tab" onclick="switchTab('pending', this)">Pending transactions</button>
         <button class="tab" onclick="switchTab('wallet', this)">Wallet lookup</button>
       </div>
 
@@ -415,7 +415,7 @@
           </div>
           <div style="text-align:right">
             <div class="block-time">${fmt(b.timestamp)}</div>
-            <div style="font-size:11px;color:var(--text-muted);margin-top:3px">${txs.length} txn${txs.length !== 1 ? 's' : ''} · <span style="color:var(--gold-dk);font-weight:600">${b.reward ?? 50} ₩</span> reward</div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:3px">${txs.length} transaction${txs.length !== 1 ? 's' : ''} · <span style="color:var(--gold-dk);font-weight:600">${b.reward ?? 50} ₩</span> reward</div>
           </div>
         </div>
         <div class="block-hash">${b.hash || b.current_hash || ''}</div>
